@@ -8,19 +8,33 @@
     <svg id="game-board" width="80%" viewBox="0 0 300 300">
       <!-- Background -->
       <rect x="0" y="0" width="290" height="290" fill="red"/>
-      <!-- Top Row -->
-      <rect  x="5" y="5" width="90" height="90" fill="" onclick="topLeft()"  />
-      <rect  x="5" y="5" width="90" height="90" id="topLeft" onclick="topLeft()"/>
+      <!-- Top Left -->
+      <rect  x="5" y="5" width="90" height="90" fill="black"/>
+      <rect  x="24" y="24" width="50" height="50" fill="black" id="topLeft" onclick="topLeft()"/>
+      <!-- Top Middle -->
       <rect  x="100" y="5" width="90" height="90"/>
+      <rect  x="120" y="24" width="50" height="50" fill="black" id="topMiddle" onclick="topMiddle()"/>
+      <!-- Top Right -->
       <rect  x="195" y="5" width="90" height="90"/>
-      <!-- Middle Row -->
+      <rect  x="213" y="24" width="50" height="50" fill="black" id="topRight" onclick="topRight()"/>
+      <!-- Middle Left -->
       <rect  x="5" y="100" width="90" height="90"/>
+      <rect  x="24" y="120" width="50" height="50" fill="black" id="middleLeft" onclick="middleLeft()"/>
+      <!-- Mid -->
       <rect  x="100" y="100" width="90" height="90"/>
+      <rect  x="120" y="120" width="50" height="50" fill="black" id="mid" onclick="mid()"/>
+      <!-- Middle Right -->
       <rect  x="195" y="100" width="90" height="90"/>
-      <!-- Bottom Row -->
+      <rect  x="213" y="120" width="50" height="50" fill="black" id="middleRight" onclick="middleRight()"/>
+      <!-- Bottom Left -->
       <rect  x="5" y="195" width="90" height="90"/>
+      <rect  x="24" y="215" width="50" height="50" fill="black" id="bottomLeft" onclick="bottomLeft()"/>
+      <!-- Bottom Middle -->
       <rect  x="100" y="195" width="90" height="90"/>
+      <rect  x="120" y="215" width="50" height="50" fill="black" id="bottomMiddle" onclick="bottomMiddle()"/>
+      <!-- Bottom Right -->
       <rect  x="195" y="195" width="90" height="90"/>
+      <rect  x="213" y="215" width="50" height="50" fill="black" id="bottomRight" onclick="bottomRight()"/>
 
 
     </svg>
