@@ -6,8 +6,20 @@ function topLeft()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("topLeft")
-  rect.setAttribute("fill","orange")
+  if (rectcolor=="orange") {
+    rect.setAttribute("fill","white")
+    rectColor="white"
+  } else{
+    rect.setAttribute("fill","orange")
+    rectColor="orange"
+  }
 }
+
+
+
+
+
+
 
 function topMiddle()
 {
