@@ -2,18 +2,20 @@
 // You can use the namespace variable that's defined here.
 var namespace = "http://www.w3.org/2000/svg"
 
-
+var buttonClicked = 0
 var rectColor="white"
 function topLeft()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("topLeft")
+  if (buttonClicked == 0)
   if (rectColor=="orange") {
     rect.setAttribute("fill", "white")
     rectColor="white"
   } else{
     rect.setAttribute("fill", "orange")
     rectColor="orange"
+    buttonClicked = 1
   }
 }
 
@@ -22,7 +24,7 @@ function topLeft()
 
 
 
-
+var secondButtonClicked="no"
 function topMiddle()
 {
   var canvas = document.getElementById("game-board")
@@ -41,7 +43,7 @@ function topMiddle()
 
 
 
-
+var thirdButtonClicked="no"
 function topRight()
 {
   var canvas = document.getElementById("game-board")
@@ -59,7 +61,7 @@ function topRight()
 
 
 
-
+var fourthButtonClicked="no"
 function middleLeft()
 {
   var canvas = document.getElementById("game-board")
@@ -77,7 +79,7 @@ function middleLeft()
 
 
 
-
+var fifthButtonClicked="no"
 function mid()
 {
   var canvas = document.getElementById("game-board")
@@ -95,7 +97,7 @@ function mid()
 
 
 
-
+var sixthButtonClicked="no"
 function middleRight()
 {
   var canvas = document.getElementById("game-board")
@@ -112,7 +114,7 @@ function middleRight()
 
 
 
-
+var seventhButtonClicked="no"
 function bottomLeft()
 {
   var canvas = document.getElementById("game-board")
@@ -129,7 +131,7 @@ function bottomLeft()
 
 
 
-
+var eighthButtonClicked="no"
 function bottomMiddle()
 {
   var canvas = document.getElementById("game-board")
@@ -147,7 +149,7 @@ function bottomMiddle()
 
 
 
-
+var ninthButtonClicked="no"
 function bottomRight()
 {
   var canvas = document.getElementById("game-board")
