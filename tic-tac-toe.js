@@ -2,20 +2,20 @@
 // You can use the namespace variable that's defined here.
 var namespace = "http://www.w3.org/2000/svg"
 
-var buttonClicked = 0
+var buttonClicked = "no"
 var rectColor="white"
 function topLeft()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("topLeft")
-  if (buttonClicked == 0)
+  if (buttonClicked == "no")
   if (rectColor=="orange") {
     rect.setAttribute("fill", "white")
     rectColor="white"
   } else{
     rect.setAttribute("fill", "orange")
     rectColor="orange"
-    buttonClicked = 1
+    buttonClicked = "yes"
   }
 }
 
@@ -29,13 +29,16 @@ function topMiddle()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("topMiddle")
+  if (secondButtonClicked == "no")
   if (rectColor=="orange") {
     rect.setAttribute("fill", "white")
     rectColor="white"
   } else{
     rect.setAttribute("fill", "orange")
     rectColor="orange"
+
   }
+  secondButtonClicked="yes"
 }
 
 
@@ -48,13 +51,16 @@ function topRight()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("topRight")
+  if (thirdButtonClicked=="no")
   if (rectColor=="orange") {
     rect.setAttribute("fill", "white")
     rectColor="white"
   } else{
     rect.setAttribute("fill", "orange")
     rectColor="orange"
+
   }
+  thirdButtonClicked="yes"
 }
 
 
@@ -66,6 +72,7 @@ function middleLeft()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("middleLeft")
+  if(fourthButtonClicked=="no")
   if (rectColor=="orange") {
     rect.setAttribute("fill", "white")
     rectColor="white"
@@ -73,6 +80,7 @@ function middleLeft()
     rect.setAttribute("fill", "orange")
     rectColor="orange"
   }
+  fourthButtonClicked="yes"
 }
 
 
@@ -84,6 +92,7 @@ function mid()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("mid")
+  if(fifthButtonClicked=="no")
   if (rectColor=="orange") {
     rect.setAttribute("fill", "white")
     rectColor="white"
@@ -91,6 +100,7 @@ function mid()
     rect.setAttribute("fill", "orange")
     rectColor="orange"
   }
+  fifthButtonClicked="yes"
 }
 
 
@@ -102,6 +112,7 @@ function middleRight()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("middleRight")
+  if(sixthButtonClicked=="no")
   if (rectColor=="orange") {
     rect.setAttribute("fill", "white")
     rectColor="white"
@@ -109,6 +120,7 @@ function middleRight()
     rect.setAttribute("fill", "orange")
     rectColor="orange"
   }
+  sixthButtonClicked="yes"
 }
 
 
@@ -119,6 +131,7 @@ function bottomLeft()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("bottomLeft")
+  if(seventhButtonClicked=="no")
   if (rectColor=="orange") {
     rect.setAttribute("fill", "white")
     rectColor="white"
@@ -126,6 +139,7 @@ function bottomLeft()
     rect.setAttribute("fill", "orange")
     rectColor="orange"
   }
+  seventhButtonClicked="yes"
 }
 
 
@@ -136,6 +150,7 @@ function bottomMiddle()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("bottomMiddle")
+  if(eighthButtonClicked=="no")
   if (rectColor=="orange") {
     rect.setAttribute("fill", "white")
     rectColor="white"
@@ -143,6 +158,7 @@ function bottomMiddle()
     rect.setAttribute("fill", "orange")
     rectColor="orange"
   }
+  eighthButtonClicked="yes"
 }
 
 
@@ -154,6 +170,7 @@ function bottomRight()
 {
   var canvas = document.getElementById("game-board")
   var rect = document.getElementById("bottomRight")
+  if(ninthButtonClicked=="no")
   if (rectColor=="orange") {
     rect.setAttribute("fill", "white")
     rectColor="white"
@@ -161,4 +178,5 @@ function bottomRight()
     rect.setAttribute("fill", "orange")
     rectColor="orange"
   }
+  ninthButtonClicked="yes"
 }
